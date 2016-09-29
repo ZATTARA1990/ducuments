@@ -1,0 +1,36 @@
+1. Начало работы
+git init
+2. Создаем файл .gitignore
+3. Добавить файл в индекс
+git add --all
+4.Проверить статус
+git status
+5. Сделать коммит
+git commit -m"кометарий к коммитуЭ"
+6. Посмотреть изменения файла
+git diff file_name
+7.Удалить что-то
+git rm-rf "some_think"
+8. Откатть изменения 
+git reset --soft
+9.Возвратить изменения в файле
+git checkout 'file_name"
+10. Создание и преключение на ветку
+git branch -b "name_branch"
+11.Переключение веток
+git checkout "name_branch"
+12.Посмотреть все ветки
+git branch -v
+13. Посмтореть сторию коммитов
+git log --oneline --graph
+14. удалить ветку
+git branch -D "branc_name"
+15. создание удаленного репозитория
+git remote add "short_name_rep" "Адресс"
+16. Запушить
+git push -u "short_name_rep" "name_branch"
+17. Вытяуть
+git pull "short_name_rep" "name_branch"
+18.Склонировать
+git clone "Адресс"
+
