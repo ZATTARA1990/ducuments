@@ -1,2 +1,13 @@
 1.Прописываем хосты
 sudo gedit /etc/hosts
+2. Конфиг apache
+sudo cp /etc/apache2/sites-available/default-ssl.conf  /etc/apache2/sites-available/test.loc.conf
+Virtual Host: 80
+ServerName: test.loc
+Document Root: /var/www/test
+3. Ссылка на в папке включенных сайтов
+sudo ln -s etc/apache2/sites-available/test.loc.conf etc/apache2/sites-enabled/test.loc.conf
+4. Перезапуск сервера
+sudo service apache2 restart
+
+Примечание: В главном конфиге etc/apache2/apache2.conf прописать AllowOverride All
