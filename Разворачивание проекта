@@ -1,0 +1,2 @@
+1.Прописываем хосты
+sudo gedit /etc/hosts
